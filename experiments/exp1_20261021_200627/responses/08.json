@@ -1,0 +1,17 @@
+{
+  "id": 8,
+  "fecha_hora": "2026-10-21T20:08:44",
+  "modelo_solicitado": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "request": {
+    "question": "Explica el concepto de IA usando una analogía comprensible para un aprendiz de software.",
+    "temperature": 0.5,
+    "top_p": 1.0,
+    "max_tokens": 300
+  },
+  "status": 200,
+  "segundos": 6.32,
+  "response": {
+    "answer": "Imagina que la **Inteligencia Artificial (IA)** es como un **programador junior muy rápido, pero que no \"entiende\" el negocio, solo patrones de código**.\n\n---\n\n### La analogía: El \"Autocompletado Mágico\" (Copilot extremo)\n\n**1. El Entrenamiento = Leer todo GitHub**\nImagina que obligas a ese junior a leer **todos los repositorios públicos de GitHub, StackOverflow, documentación y tutorials** en una semana. No \"aprende\" conceptos como tú (entender *por qué* un `for` es mejor que un `while` aquí), sino que **memoriza patrones estadísticos**:\n*   \"Cuando veo `function calculateTax(...)`, el 90% de las veces sigue `return amount * 0.21;`.\"\n*   \"Si el usuario pide 'API REST en Express', la estructura típica es `app.get('/', ...)`.\"\n\n**2. La Inferencia (Uso) = Autocompletado contextual**\nCuando tú le pides: *\"Escribe una función en Python para ordenar una lista sin usar `sort()`\"*.\n*   **Tú (Humano):** Piensas en algoritmos (burbuja,",
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+  }
+}

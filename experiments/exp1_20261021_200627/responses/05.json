@@ -1,0 +1,17 @@
+{
+  "id": 5,
+  "fecha_hora": "2026-10-21T20:08:10",
+  "modelo_solicitado": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "request": {
+    "question": "Explica el concepto de IA usando una analogía comprensible para un aprendiz de software.",
+    "temperature": 0.1,
+    "top_p": 1.0,
+    "max_tokens": 300
+  },
+  "status": 200,
+  "segundos": 3.49,
+  "response": {
+    "answer": "Imagina que la **Inteligencia Artificial (IA)** es como un **programador junior muy rápido, pero que no \"entiende\" el negocio, solo patrones de código**.\n\n---\n\n### La analogía: El \"Autocompletado Mágico\" (LLM) vs. La Ingeniería Tradicional\n\n#### 1. Programación Tradicional (Reglas Explícitas)\nTú escribes el **algoritmo** (la receta exacta).\n*   **Input:** Datos + Reglas (`if/else`, bucles, fórmulas).\n*   **Output:** Resultado determinista.\n*   **Ejemplo:** `calcularIVA(precio) { return precio * 0.21; }`\n*   **Tú:** Eres el arquitecto. La máquina solo obedece instrucciones paso a paso.\n\n#### 2. Inteligencia Artificial / Machine Learning (Aprendizaje de Patrones)\nTú das **ejemplos** (datos de entrada + salida esperada) y el modelo **infiera la función** (los pesos/parámetros).\n*   **Input:** Miles de ejemplos `(precio, precioConIVA)`.\n*   **Proceso:** El modelo ajusta sus \"perillas",
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+  }
+}

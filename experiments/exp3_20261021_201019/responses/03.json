@@ -1,0 +1,17 @@
+{
+  "id": 3,
+  "fecha_hora": "2026-10-21T20:10:39",
+  "modelo_solicitado": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "request": {
+    "question": "Explica qué es FastAPI, presenta tres ventajas reales y escribe un ejemplo sencillo de endpoint.",
+    "temperature": 0.3,
+    "top_p": 1.0,
+    "max_tokens": 400
+  },
+  "status": 200,
+  "segundos": 7.83,
+  "response": {
+    "answer": "## ¿Qué es FastAPI?\n\n**FastAPI** es un framework web moderno y de alto rendimiento para construir APIs con Python 3.7+. Se basa en:\n\n- **Starlette** para la parte web (routing, middleware, WebSockets).\n- **Pydantic** para validación y serialización de datos mediante *type hints* de Python.\n\nSu diseño permite escribir código asíncrono de forma natural y genera documentación automática (OpenAPI/Swagger UI y ReDoc) sin configuración extra.\n\n---\n\n## Tres ventajas reales\n\n| Ventaja | Por qué importa |\n|---------|-----------------|\n| **Rendimiento cercano a Node/Go** | Gracias a ASGI y `uvicorn`, maneja miles de peticiones concurrentes con bajo consumo de memoria. |\n| **Validación automática y editor-friendly** | Los *type hints* validan entrada/salida y dan autocompletado en VS Code, PyCharm, etc. |\n| **Documentación interactiva lista para usar** | Al arrancar la app tienes `/docs` (Swagger UI) y `/redoc` para probar endpoints sin escribir HTML. |\n\n---\n\n## Ejemplo sencillo de endpoint\n\n```python\n# main.py\nfrom fastapi import FastAPI\nfrom pydantic import BaseModel\n\napp = FastAPI()\n\nclass Item(BaseModel):\n    nombre: str\n    precio: float\n    en_oferta: bool | None = None   # opcional\n\n@app.post(\"/items/\")\nasync def crear_item(item: Item):\n    \"\"\"\n    Recibe un JSON, lo valida y devuelve el mismo objeto con un campo extra.\n    \"\"\"\n    return {\"mensaje\": \"Ítem creado\", \"item",
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+  }
+}

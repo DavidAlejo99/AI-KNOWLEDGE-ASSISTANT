@@ -1,0 +1,17 @@
+{
+  "id": 6,
+  "fecha_hora": "2026-10-21T20:08:17",
+  "modelo_solicitado": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "request": {
+    "question": "Explica el concepto de IA usando una analogía comprensible para un aprendiz de software.",
+    "temperature": 0.5,
+    "top_p": 1.0,
+    "max_tokens": 300
+  },
+  "status": 200,
+  "segundos": 3.52,
+  "response": {
+    "answer": "Imagina que la **programación tradicional** es como **escribir una receta de cocina paso a paso** para un robot cocinero muy literal.\n\n```python\n# Programación Tradicional (Receta Explícita)\ndef hacer_tortilla(patatas, huevos, cebolla):\n    pelar(patatas)\n    cortar(patatas, \"cuadrados\")\n    freir(patatas)\n    if cebolla:\n        freir(cebolla)\n    batir(huevos)\n    mezclar(patatas, huevos, cebolla)\n    cuajar(sartén)\n    return tortilla\n```\nTú (el programador) debes anticipar **todos** los casos: ¿qué pasa si la patata está verde? ¿Y si la sartén es antiadherente? ¿Y si el fuego es de inducción? Si surge un caso no previsto, el programa falla o hace algo absurdo.\n\n---\n\n### La Analogía: **El \"Chef Intuitivo\" vs. La \"Receta Escrita\"**\n\nLa **Inteligencia Artificial (específicamente el Machine Learning)** no es escribir la receta. Es **contratar a un chef",
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+  }
+}

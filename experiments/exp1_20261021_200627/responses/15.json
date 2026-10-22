@@ -1,0 +1,17 @@
+{
+  "id": 15,
+  "fecha_hora": "2026-10-21T20:09:55",
+  "modelo_solicitado": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "request": {
+    "question": "Explica el concepto de IA usando una analogía comprensible para un aprendiz de software.",
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "max_tokens": 300
+  },
+  "status": 200,
+  "segundos": 5.04,
+  "response": {
+    "answer": "Imagina que la **Inteligencia Artificial (IA)** es como un **programador junior muy rápido, pero que no \"entiende\" el negocio, solo aprende patrones de ejemplos.**\n\n---\n\n### La analogía: \"El programador que aprende por *code review* masivo\"\n\n#### 1. El enfoque clásico (Software tradicional)\nTú escribes las **reglas explícitas** (el algoritmo).\n```python\n# Tú decides la lógica exacta\ndef es_spam(email):\n    if \"gana_dinero\" in email.asunto or \"viagra\" in email.cuerpo:\n        return True\n    return False\n```\n*   **Control total:** Sabes *por qué* decide eso.\n*   **Rigidez:** Si los spammers cambian a \"g4n4_d1n3r0\", tu código falla hasta que *tú* lo actualizas.\n\n---\n\n#### 2. El enfoque IA (Machine Learning)\nTú **no escribes las reglas**. Tú le das **datos de entrada y la respuesta correcta esperada (etiquetas)**, y el modelo *infers* la función matemática que mapea uno a otro.\n\n```python\n# Tú NO escribes la lógica. Entrenas un",
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+  }
+}

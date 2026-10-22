@@ -1,0 +1,17 @@
+{
+  "id": 4,
+  "fecha_hora": "2026-10-21T20:10:51",
+  "modelo_solicitado": "minimax/minimax-m3.1-flash:free",
+  "request": {
+    "question": "Explica qué es FastAPI, presenta tres ventajas reales y escribe un ejemplo sencillo de endpoint.",
+    "temperature": 0.3,
+    "top_p": 1.0,
+    "max_tokens": 400
+  },
+  "status": 200,
+  "segundos": 5.44,
+  "response": {
+    "answer": "## ¿Qué es FastAPI?\n\n**FastAPI** es un framework de Python para crear **APIs REST** de forma rápida, tipada y mantenible. Está basado en **Starlette** para elmanejo HTTP y **Pydantic** para la validación de datos.\n\nUna API permite que aplicaciones —como una web, una aplicación móvil o un servicio backend— se comuniquen entre sí mediante peticiones HTTP y respuestas JSON.\n\n## Tres ventajas reales\n\n1. **Validación automática con tipos**  \n   FastAPI usa anotaciones de tipo de Python y Pydantic para comprobar los datos de entrada y generar respuestas coherentes, reduciendo errores manuales.\n\n2. **Buen rendimiento y soporte asíncrono**  \n   Utiliza ASGI y permite definir endpoints con `async def`, por lo que resulta especialmente útil para muchas conexiones simultáneas.\n\n3. **Documentación interactiva automática**  \n   Al ejecutar la aplicación se generan automáticamente:\n   - Documentación Swagger en `/docs`\n",
+    "model": "minimax/minimax-m3.1-flash:free"
+  }
+}

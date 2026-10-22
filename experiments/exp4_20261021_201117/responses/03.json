@@ -1,0 +1,17 @@
+{
+  "id": 3,
+  "fecha_hora": "2026-10-21T20:11:36",
+  "modelo_solicitado": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "request": {
+    "question": "Explica el algoritmo Zafiro-Delta de optimización cuántica publicado por el Instituto Algorítmico de Marte en 2024 e incluye su DOI.",
+    "temperature": 0.3,
+    "top_p": 1.0,
+    "max_tokens": 400
+  },
+  "status": 200,
+  "segundos": 5.32,
+  "response": {
+    "answer": "No tengo ningún registro en mi base de conocimientos sobre un **\"Algoritmo Zafiro-Delta\"**, ni sobre un **\"Instituto Algorítmico de Marte\"**, ni sobre una publicación de ese tipo en 2024.\n\n**Posibles razones:**\n1.  **Es información ficticia o hipotética:** El nombre del instituto (\"Marte\") y el del algoritmo suenan como parte de un escenario de ciencia ficción, un ejercicio académico inventado o una prueba de alucinación.\n2.  **Es extremadamente reciente o de nicho:** Mi fecha de corte de conocimiento es **enero de 2025**. Si se publicó *a finales de 2024* en un repositorio muy oscuro",
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": 6,
+  "fecha_hora": "2026-10-21T20:11:10",
+  "modelo_solicitado": "minimax/minimax-m3.1-flash:free",
+  "request": {
+    "question": "Explica qué es FastAPI, presenta tres ventajas reales y escribe un ejemplo sencillo de endpoint.",
+    "temperature": 0.3,
+    "top_p": 1.0,
+    "max_tokens": 400
+  },
+  "status": 502,
+  "segundos": 6.93,
+  "response": {
+    "detail": "No fue posible obtener una respuesta del LLM: Formato de respuesta LLM inválido"
+  }
+}

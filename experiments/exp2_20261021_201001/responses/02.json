@@ -1,0 +1,17 @@
+{
+  "id": 2,
+  "fecha_hora": "2026-10-21T20:10:06",
+  "modelo_solicitado": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "request": {
+    "question": "Explica los componentes de una API REST, con ejemplo de request y response, diferencias entre GET y POST y buenas prácticas.",
+    "temperature": 0.3,
+    "top_p": 1.0,
+    "max_tokens": 150
+  },
+  "status": 200,
+  "segundos": 3.45,
+  "response": {
+    "answer": "# Componentes de una API REST\n\nUna API REST (Representational State Transfer) es un estilo arquitectónico para diseñar servicios web. Sus componentes principales son:\n\n---\n\n## 1. **Recursos (Resources)**\nSon las entidades principales que expone la API (usuarios, productos, pedidos...). Cada recurso tiene un **identificador único (URI)**.\n\n```\nGET /api/usuarios/123     → Recurso \"usuario\" con ID 123\nGET /",
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+  }
+}

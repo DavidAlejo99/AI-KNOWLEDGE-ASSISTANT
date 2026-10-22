@@ -1,0 +1,17 @@
+{
+  "id": 11,
+  "fecha_hora": "2026-10-21T20:09:13",
+  "modelo_solicitado": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "request": {
+    "question": "Explica el concepto de IA usando una analogía comprensible para un aprendiz de software.",
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "max_tokens": 300
+  },
+  "status": 200,
+  "segundos": 9.07,
+  "response": {
+    "answer": "**Analogía: La IA como un \"Junior Developer\" que aprende por ejemplos (no por instrucciones explícitas)**\n\nImagina que tienes que construir una función que detecte si un correo es **spam** o **no spam**.\n\n---\n\n### 1. Programación Tradicional (Reglas Explícitas) — *Tú eres el Senior Dev*\nTú analizas miles de correos, identificas patrones y **escribes las reglas a mano**:\n\n```python\ndef es_spam(correo):\n    if \"gratis\" in correo.asunto or \"ganaste\" in correo.cuerpo:\n        return True\n    if correo.remitente en lista_negra:\n        return True\n    return False\n```\n\n**Problema:** Los spammers cambian tácticas constantemente. Tú tienes que actualizar las reglas manualmente cada vez (`if \"oferta\"`, `if \"descuento\"`, `if \"crypto\"`...). No escala.\n\n---\n\n### 2. Machine Learning (Aprendizaje Supervisado) — *Contratas a un Junior que aprende por ejemplos*\nEn lugar de darles las reglas, le das **datos etiquetados** (el \"dataset de entrenamiento\"):\n\n",
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+  }
+}

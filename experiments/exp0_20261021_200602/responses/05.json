@@ -1,0 +1,29 @@
+{
+  "id": 5,
+  "fecha_hora": "2026-10-21T20:06:27",
+  "modelo_solicitado": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "request": {
+    "question": "Explica qué es una API REST con un ejemplo educativo.",
+    "temperature": -1,
+    "top_p": 1.0,
+    "max_tokens": 300
+  },
+  "status": 422,
+  "segundos": 0.0,
+  "response": {
+    "detail": [
+      {
+        "type": "greater_than_equal",
+        "loc": [
+          "body",
+          "temperature"
+        ],
+        "msg": "Input should be greater than or equal to 0",
+        "input": -1,
+        "ctx": {
+          "ge": 0.0
+        }
+      }
+    ]
+  }
+}

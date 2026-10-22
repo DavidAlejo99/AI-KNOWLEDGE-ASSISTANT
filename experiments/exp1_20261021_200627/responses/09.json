@@ -1,0 +1,17 @@
+{
+  "id": 9,
+  "fecha_hora": "2026-10-21T20:08:55",
+  "modelo_solicitado": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "request": {
+    "question": "Explica el concepto de IA usando una analogía comprensible para un aprendiz de software.",
+    "temperature": 0.5,
+    "top_p": 1.0,
+    "max_tokens": 300
+  },
+  "status": 200,
+  "segundos": 6.83,
+  "response": {
+    "answer": "### La analogía del **\"Cocinero vs. Receta Tradicional\"**\n\nImagina que estás construyendo una aplicación. Tienes dos formas de resolver un problema (por ejemplo, **clasificar correos como \"Spam\" o \"No Spam\"**).\n\n---\n\n#### 1. Programación Tradicional (El \"Cocinero que sigue la receta al pie de la letra\")\nTú (el programador) analizas el problema, escribes **reglas explícitas** (`if/else`) y le dices a la computadora **exactamente** qué pasos seguir.\n\n```python\n# Lógica explícita escrita por ti\nif \"gratis\" in asunto or \"ganaste\" in cuerpo:\n    return \"SPAM\"\nelif remitente en contactos_confiables:\n    return \"NO_SPAM\"\nelse:\n    return \"REVISAR_MANUALMENTE\"\n```\n*   **Ventaja:** Control total, predecible, fácil de depurar.\n*   **Desventaja:** Si los spammers cambian \"gratis\" por \"gr4tis\" o \"𝓰𝓻𝓪𝓽𝓲𝓼\", tu código falla. Tienes que",
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+  }
+}

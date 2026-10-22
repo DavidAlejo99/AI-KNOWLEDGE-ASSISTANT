@@ -1,0 +1,16 @@
+{
+  "id": 2,
+  "fecha_hora": "2026-10-21T20:01:08",
+  "modelo_solicitado": "google/gemma-4-31b-it:free",
+  "request": {
+    "question": "Explica qué es una API REST con un ejemplo educativo.",
+    "temperature": 0.3,
+    "top_p": 1.0,
+    "max_tokens": 300
+  },
+  "status": 502,
+  "segundos": 0.52,
+  "response": {
+    "detail": "No fue posible obtener una respuesta del LLM: OpenRouter respondió HTTP 429"
+  }
+}

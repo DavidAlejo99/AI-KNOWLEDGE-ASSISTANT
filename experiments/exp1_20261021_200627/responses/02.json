@@ -1,0 +1,17 @@
+{
+  "id": 2,
+  "fecha_hora": "2026-10-21T20:07:36",
+  "modelo_solicitado": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "request": {
+    "question": "Explica el concepto de IA usando una analogía comprensible para un aprendiz de software.",
+    "temperature": 0.1,
+    "top_p": 1.0,
+    "max_tokens": 300
+  },
+  "status": 200,
+  "segundos": 6.37,
+  "response": {
+    "answer": "Imagina que la **Inteligencia Artificial (IA)** es como un **programador junior muy rápido, pero que no \"entiende\" el código que escribe, solo predice qué líneas vienen a continuación basándose en millones de ejemplos que ha visto antes**.\n\nAquí tienes la analogía desglosada en conceptos de software:\n\n---\n\n### 1. El Dataset = La Base de Código Abierto (GitHub a escala masiva)\nAntes de que exista la IA, \"leemos\" todo el código público del mundo: repositorios, StackOverflow, documentación, tutoriales.\n*   **En IA:** Esto es el **Entrenamiento**. El modelo ve patrones: \"cuando alguien escribe `function calculateTax(...)`, suele seguir `return amount * 0.21;`\".\n\n### 2. El Modelo (Los Pesos) = Un Motor de Autocompletado Estadístico Gigante\nNo guarda el código en una base de datos (`SELECT * FROM code`). En su lugar, **comprime el conocimiento estadístico** en una red neuronal (matrices de números/parámetros).\n*   **Analogía:** Es como si hubieras memorizado la *estructura* de todos los patrones de diseño (Singleton, Factory, Observer) sin memorizar el",
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": 14,
+  "fecha_hora": "2026-10-21T20:09:45",
+  "modelo_solicitado": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "request": {
+    "question": "Explica el concepto de IA usando una analogía comprensible para un aprendiz de software.",
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "max_tokens": 300
+  },
+  "status": 200,
+  "segundos": 6.37,
+  "response": {
+    "answer": "Imagina que la **Inteligencia Artificial (IA)** es como un **programador junior extremadamente rápido, pero que no \"entiende\" el código que escribe; solo predice qué líneas vienen a continuación basándose en millones de ejemplos que ha visto antes.**\n\nAquí tienes la analogía desglosada en conceptos de software:\n\n---\n\n### 1. El Entrenamiento = `npm install` masivo + `build` infinito\n*   **Datos de entrenamiento:** Son el `node_modules` definitivo. Terabytes de código abierto (GitHub), documentación, StackOverflow, artículos, libros.\n*   **El Modelo (LLM):** Es el **artefacto compilado** (un archivo `.bin` o `.safetensors` gigante) que resulta de \"comprimir\" todo ese conocimiento en pesos numéricos (parámetros).\n*   **Entrenar:** Es el proceso de **backpropagation** ajustando esos pesos para minimizar la *loss function* (error de predicción). Cuesta millones de dólares en GPU-hours (igual que un build masivo en CI/CD que tarda semanas).\n\n### 2. La Inferencia = `runtime` / `function call`\nCuando usas la IA (ChatGPT, Copilot, tu modelo local):\n```python\n# Pseudocódigo mental",
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+  }
+}

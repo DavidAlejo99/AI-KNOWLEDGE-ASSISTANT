@@ -1,0 +1,17 @@
+{
+  "id": 1,
+  "fecha_hora": "2026-10-21T20:10:01",
+  "modelo_solicitado": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "request": {
+    "question": "Explica los componentes de una API REST, con ejemplo de request y response, diferencias entre GET y POST y buenas prácticas.",
+    "temperature": 0.3,
+    "top_p": 1.0,
+    "max_tokens": 50
+  },
+  "status": 200,
+  "segundos": 1.06,
+  "response": {
+    "answer": "The user wants an explanation of REST API components, including request/response examples, differences between GET and POST, and best practices.\nThe response must be in Spanish, clear, educational, with simple examples.\nI need to structure the answer logically.",
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+  }
+}

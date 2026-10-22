@@ -1,0 +1,17 @@
+{
+  "id": 3,
+  "fecha_hora": "2026-10-21T20:10:13",
+  "modelo_solicitado": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "request": {
+    "question": "Explica los componentes de una API REST, con ejemplo de request y response, diferencias entre GET y POST y buenas prácticas.",
+    "temperature": 0.3,
+    "top_p": 1.0,
+    "max_tokens": 500
+  },
+  "status": 200,
+  "segundos": 5.89,
+  "response": {
+    "answer": "# Componentes de una API REST\n\nUna **API REST** (Representational State Transfer) es un estilo de arquitectura para diseñar servicios web. Sus componentes principales son:\n\n---\n\n## 1. Componentes Fundamentales\n\n| Componente | Descripción |\n|------------|-------------|\n| **Recurso (Resource)** | Entidad de información (usuario, producto, pedido). Se identifica con un **URI**. |\n| **URI / Endpoint** | Dirección única para acceder al recurso. Ej: `https://api.ejemplo.com/v1/usuarios/123` |\n| **Método HTTP (Verbo)** | Acción a realizar sobre el recurso: `GET`, `POST`, `PUT`, `PATCH`, `DELETE`. |\n| **Headers (Cabeceras)** | Metadatos de la petición/respuesta: `Content-Type`, `Authorization`, `Accept`. |\n| **Cuerpo (Body)** | Datos que se envían (en `POST`, `PUT`, `PATCH`) o se reciben. Generalmente en **JSON**. |\n| **Códigos de Estado (Status Codes)** | Indican el resultado: `200 OK`, `201 Created`, `400 Bad Request`, `404 Not Found`, `500 Internal Server Error`. |\n\n---\n\n## 2. Ejemplo Completo: Request y Response\n\n**Escenario:** Crear un nuevo usuario.\n\n### Request (Petición)\n```http\nPOST /api/v1/usuarios HTTP/1.1\nHost: api.ejemplo.com\nContent-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzI1NiIs...\nAccept: application/json\n\n{\n  \"nombre\": \"Ana García\",\n  \"email\": \"ana@ejemplo.com\",\n  \"rol\": \"desarrollador\"\n}\n```\n\n### Response (Respuesta exitosa)\n```http\nHTTP/1.1 201 Created\nContent-Type: application/json\nLocation: https://api.ejemplo.com/api/v1/usuarios/456\n\n{\n  \"id\": ",
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+  }
+}

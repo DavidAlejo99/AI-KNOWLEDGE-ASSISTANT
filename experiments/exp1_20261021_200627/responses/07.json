@@ -1,0 +1,17 @@
+{
+  "id": 7,
+  "fecha_hora": "2026-10-21T20:08:25",
+  "modelo_solicitado": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "request": {
+    "question": "Explica el concepto de IA usando una analogía comprensible para un aprendiz de software.",
+    "temperature": 0.5,
+    "top_p": 1.0,
+    "max_tokens": 300
+  },
+  "status": 200,
+  "segundos": 15.6,
+  "response": {
+    "answer": "Imagina que la **Inteligencia Artificial (IA)** es como un **programador junior muy especial** que no escribe código línea por línea siguiendo tus instrucciones exactas, sino que **aprende a escribir su propio código basándose en ejemplos**.\n\nAquí tienes la analogía completa paso a paso:\n\n---\n\n### 1. La Programación Tradicional (Reglas Explícitas)\n**Tú eres el Arquitecto.**  \nEscribes las reglas `if/else` explícitamente:\n```python\ndef es_gato(imagen):\n    if tiene_orejas_puntiagudas(imagen) and tiene_bigotes(imagen):\n        return \"Gato\"\n    else:\n        return \"No Gato\"\n```\n* **Limitación:** Si el gato está de espaldas, tapado o es una raza rara (Sphynx sin pelo), tu código falla. Tienes que anticipar **todos** los casos边界 (edge cases) manualmente.\n\n---\n\n### 2. El Enfoque de IA / Machine Learning (Aprendizaje por Ejemplos)\n**Tú eres el Product Owner / Curador de Datos.**  \nEn lugar de escribir la lógica, le das al \"programador junior\" (el **Modelo**) un **",
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+  }
+}

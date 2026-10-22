@@ -1,0 +1,17 @@
+{
+  "id": 10,
+  "fecha_hora": "2026-10-21T20:09:06",
+  "modelo_solicitado": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "request": {
+    "question": "Explica el concepto de IA usando una analogía comprensible para un aprendiz de software.",
+    "temperature": 0.5,
+    "top_p": 1.0,
+    "max_tokens": 300
+  },
+  "status": 200,
+  "segundos": 3.61,
+  "response": {
+    "answer": "Imagina que la **programación tradicional** es como **escribir una receta de cocina paso a paso** para un robot cocinero muy literal.\n\n*   **Tú (programador)** analizas el problema, piensas la lógica y escribes las instrucciones exactas: *\"Si la temperatura > 100°C, apaga el fuego\"*, *\"Corta la cebolla en cubos de 1cm\"*.\n*   **La máquina** solo ejecuta *exactamente* lo que escribiste. Si aparece una cebolla morada en lugar de blanca, y no escribiste una regla para eso, el robot se traba o la trata mal.\n\n---\n\nLa **Inteligencia Artificial (específicamente el Machine Learning)** es como **contratar a un aprendiz de cocinero y enseñarle con ejemplos**, en lugar de darle la receta escrita.\n\n### La analogía en 3 fases (Entrenamiento, Modelo, Inferencia)\n\n#### 1. Entrenamiento (Training) = La práctica supervisada\nLe das al aprendiz **1.000 fotos de platos terminados** junto con **la lista de ingredientes y pasos** que se usaron para cada uno (datos etiqu",
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+  }
+}

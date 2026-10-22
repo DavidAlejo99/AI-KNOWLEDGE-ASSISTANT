@@ -1,0 +1,6 @@
+id,fecha_hora,modelo_solicitado,modelo_servido,temperature,top_p,max_tokens,status,segundos,palabras,pregunta,archivo_respuesta,detalle_error
+1,2026-10-21T20:06:02,nvidia/nemotron-3-ultra-550b-a55b:free,nvidia/nemotron-3-ultra-550b-a55b:free,0.3,1.0,300,200,4.99,153,Explica qué es una API REST con un ejemplo educativo.,responses/01.json,
+2,2026-10-21T20:06:11,nvidia/nemotron-3-ultra-550b-a55b:free,nvidia/nemotron-3-ultra-550b-a55b:free,0.3,1.0,300,200,4.86,153,Explica qué es una API REST con un ejemplo educativo.,responses/02.json,
+3,2026-10-21T20:06:20,nvidia/nemotron-3-ultra-550b-a55b:free,nvidia/nemotron-3-ultra-550b-a55b:free,0.3,1.0,300,200,3.29,159,Explica qué es una API REST con un ejemplo educativo.,responses/03.json,
+4,2026-10-21T20:06:27,nvidia/nemotron-3-ultra-550b-a55b:free,,0.3,1.0,300,422,0.0,0,A,responses/04.json,"[{""type"": ""string_too_short"", ""loc"": [""body"", ""question""], ""msg"": ""String should have at least 3 characters"", ""input"": ""A"", ""ctx"": {""min_length"": 3}}]"
+5,2026-10-21T20:06:27,nvidia/nemotron-3-ultra-550b-a55b:free,,-1,1.0,300,422,0.0,0,Explica qué es una API REST con un ejemplo educativo.,responses/05.json,"[{""type"": ""greater_than_equal"", ""loc"": [""body"", ""temperature""], ""msg"": ""Input should be greater than or equal to 0"", ""input"": -1, ""ctx"": {""ge"": 0.0}}]"

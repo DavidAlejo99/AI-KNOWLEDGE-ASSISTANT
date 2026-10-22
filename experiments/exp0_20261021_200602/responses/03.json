@@ -1,0 +1,17 @@
+{
+  "id": 3,
+  "fecha_hora": "2026-10-21T20:06:20",
+  "modelo_solicitado": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "request": {
+    "question": "Explica qué es una API REST con un ejemplo educativo.",
+    "temperature": 0.3,
+    "top_p": 1.0,
+    "max_tokens": 300
+  },
+  "status": 200,
+  "segundos": 3.29,
+  "response": {
+    "answer": "## ¿Qué es una API REST?\n\nUna **API REST** (Representational State Transfer) es un conjunto de reglas y convenciones que permite que dos aplicaciones se comuniquen entre sí a través de internet usando el protocolo **HTTP**.\n\nPiensa en ella como un **camarero en un restaurante**:\n1. **Tú (el cliente)** pides algo desde la carta (haces una petición HTTP).\n2. **El camarero (la API)** lleva tu pedido a la cocina (el servidor).\n3. **La cocina** prepara el plato (procesa la lógica y consulta la base de datos).\n4. **El camarero** te trae el plato (devuelve una respuesta, usualmente en formato JSON).\n\n---\n\n## Principios clave (Restricciones REST)\n\n| Principio | Explicación sencilla |\n| :--- | :--- |\n| **Cliente-Servidor | Separación de responsabilidades: el frontend (cliente) no sabe cómo guarda los datos el backend (servidor). |\n| **Sin estado (Stateless)** | Cada petición lleva **toda** la información necesaria. El servidor no \"recuerda\" al cliente entre peticiones. |\n| **Cachéable",
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+  }
+}

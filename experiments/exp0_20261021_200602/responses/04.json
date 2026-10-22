@@ -1,0 +1,29 @@
+{
+  "id": 4,
+  "fecha_hora": "2026-10-21T20:06:27",
+  "modelo_solicitado": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "request": {
+    "question": "A",
+    "temperature": 0.3,
+    "top_p": 1.0,
+    "max_tokens": 300
+  },
+  "status": 422,
+  "segundos": 0.0,
+  "response": {
+    "detail": [
+      {
+        "type": "string_too_short",
+        "loc": [
+          "body",
+          "question"
+        ],
+        "msg": "String should have at least 3 characters",
+        "input": "A",
+        "ctx": {
+          "min_length": 3
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+id,fecha_hora,modelo_solicitado,modelo_servido,temperature,top_p,max_tokens,status,segundos,palabras,pregunta,archivo_respuesta,detalle_error
+1,2026-10-21T20:11:17,nvidia/nemotron-3-ultra-550b-a55b:free,nvidia/nemotron-3-ultra-550b-a55b:free,0.3,1.0,400,200,5.28,138,Explica el algoritmo Zafiro-Delta de optimización cuántica publicado por el Instituto Algorítmico de Marte en 2024 e incluye su DOI.,responses/01.json,
+2,2026-10-21T20:11:27,nvidia/nemotron-3-ultra-550b-a55b:free,nvidia/nemotron-3-ultra-550b-a55b:free,0.3,1.0,400,200,4.91,100,Explica el algoritmo Zafiro-Delta de optimización cuántica publicado por el Instituto Algorítmico de Marte en 2024 e incluye su DOI.,responses/02.json,
+3,2026-10-21T20:11:36,nvidia/nemotron-3-ultra-550b-a55b:free,nvidia/nemotron-3-ultra-550b-a55b:free,0.3,1.0,400,200,5.32,93,Explica el algoritmo Zafiro-Delta de optimización cuántica publicado por el Instituto Algorítmico de Marte en 2024 e incluye su DOI.,responses/03.json,

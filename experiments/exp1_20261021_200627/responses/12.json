@@ -1,0 +1,17 @@
+{
+  "id": 12,
+  "fecha_hora": "2026-10-21T20:09:26",
+  "modelo_solicitado": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "request": {
+    "question": "Explica el concepto de IA usando una analogía comprensible para un aprendiz de software.",
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "max_tokens": 300
+  },
+  "status": 200,
+  "segundos": 5.13,
+  "response": {
+    "answer": "## 🤖 Inteligencia Artificial: La analogía del \"Pasante Inteligente\"\n\nImagina que la **IA es como un pasante muy listo, pero sin experiencia previa en tu empresa**.\n\n---\n\n### 📋 Cómo funciona esta analogía\n\n| Concepto de IA | En la analogía del pasante |\n|----------------|----------------------------|\n| **Modelo base** | Un recién graduado que leyó *todos* los libros de programación, StackOverflow, documentación y tutoriales que existen |\n| **Entrenamiento** | Sus 4 años de universidad \"leyendo\" millones de líneas de código y patrones |\n| **Inferencia (usar la IA)** | Tú le das una tarea: *\"Hazme un endpoint REST en Python\"* |\n| **Prompt / Contexto** | La especificación que le pasas: *\"Usa FastAPI, autenticación JWT, y PostgreSQL\"* |\n| **Respuesta** | Te entrega código funcional... *a veces con bugs sutiles* |\n| **Fine-tuning** | Hacer que ese pasante trabaje 6 meses *solo* en tu codebase interno |\n| **RAG (Retrieval-Augmented Generation)** | Dár",
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+  }
+}

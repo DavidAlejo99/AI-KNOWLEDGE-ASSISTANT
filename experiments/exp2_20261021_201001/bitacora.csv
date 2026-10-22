@@ -1,0 +1,4 @@
+id,fecha_hora,modelo_solicitado,modelo_servido,temperature,top_p,max_tokens,status,segundos,palabras,pregunta,archivo_respuesta,detalle_error
+1,2026-10-21T20:10:01,nvidia/nemotron-3-ultra-550b-a55b:free,nvidia/nemotron-3-ultra-550b-a55b:free,0.3,1.0,50,200,1.06,38,"Explica los componentes de una API REST, con ejemplo de request y response, diferencias entre GET y POST y buenas prácticas.",responses/01.json,
+2,2026-10-21T20:10:06,nvidia/nemotron-3-ultra-550b-a55b:free,nvidia/nemotron-3-ultra-550b-a55b:free,0.3,1.0,150,200,3.45,58,"Explica los componentes de una API REST, con ejemplo de request y response, diferencias entre GET y POST y buenas prácticas.",responses/02.json,
+3,2026-10-21T20:10:13,nvidia/nemotron-3-ultra-550b-a55b:free,nvidia/nemotron-3-ultra-550b-a55b:free,0.3,1.0,500,200,5.89,192,"Explica los componentes de una API REST, con ejemplo de request y response, diferencias entre GET y POST y buenas prácticas.",responses/03.json,

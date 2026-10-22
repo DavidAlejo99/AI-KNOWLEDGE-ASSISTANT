@@ -1,0 +1,29 @@
+{
+  "id": 4,
+  "fecha_hora": "2026-10-21T19:57:45",
+  "modelo_solicitado": "google/gemma-4-31b-it:free",
+  "request": {
+    "question": "A",
+    "temperature": 0.3,
+    "top_p": 1.0,
+    "max_tokens": 300
+  },
+  "status": 422,
+  "segundos": 0.0,
+  "response": {
+    "detail": [
+      {
+        "type": "string_too_short",
+        "loc": [
+          "body",
+          "question"
+        ],
+        "msg": "String should have at least 3 characters",
+        "input": "A",
+        "ctx": {
+          "min_length": 3
+        }
+      }
+    ]
+  }
+}
