@@ -1,23 +1,17 @@
 import pytest
 
-from app.services.assistance_service import BootstrapAssistantService
+from app.services.assistant_service import SYSTEM_PROMPT, AssistantService
+from tests.fakes import FakeLLMProvider
 
 
 @pytest.mark.asyncio
-async def test_returns_known_answer() -> None:
-    service = BootstrapAssistantService()
+async def test_service_builds_system_and_user_messages() -> None:
+    provider = FakeLLMProvider(answer="FastAPI es un framework")
+    service = AssistantService(provider)
 
-    response = await service.answer("¿Qué es FastAPI?")
+    result = await service.ask("¿Qué es FastAPI?", temperature=0.5)
 
-    assert response.provider == "bootstrap-local"
-    assert "framework" in response.answer.lower()
-
-
-@pytest.mark.asyncio
-async def test_returns_default_answer() -> None:
-    service = BootstrapAssistantService()
-
-    response = await service.answer("Hola, ¿cómo estás?")
-
-    assert response.provider == "bootstrap-local"
-    assert "operativa" in response.answer
+    assert result.content == "FastAPI es un framework"
+    assert provider.last_messages[0] == {"role": "system", "content": SYSTEM_PROMPT}
+    assert provider.last_messages[1] == {"role": "user", "content": "¿Qué es FastAPI?"}
+    assert provider.last_params["temperature"] == 0.5
