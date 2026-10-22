@@ -10,5 +10,5 @@ router = APIRouter(tags=["health"])
 async def health() -> HealthResponse:
     return HealthResponse(
         service="ai-knowledge-assistant",
-        version="0.1.0",
+        version="0.2.0",
     )
