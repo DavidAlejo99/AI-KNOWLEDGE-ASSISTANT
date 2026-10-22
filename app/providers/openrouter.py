@@ -1,6 +1,11 @@
+import logging
+
 import httpx
 
 from app.providers.base import LLMProviderError, LLMResult
+
+
+logger = logging.getLogger(__name__)
 
 
 class OpenRouterProvider:
@@ -60,6 +65,7 @@ class OpenRouterProvider:
 
         except httpx.HTTPStatusError as exc:
             status = exc.response.status_code
+            logger.warning("OpenRouter HTTP %s: %s", status, exc.response.text[:300])
             raise LLMProviderError(f"OpenRouter respondió HTTP {status}") from exc
 
         except (httpx.RequestError, ValueError) as exc:
