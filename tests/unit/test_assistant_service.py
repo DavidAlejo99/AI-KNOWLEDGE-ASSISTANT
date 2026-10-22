@@ -11,3 +11,13 @@ async def test_returns_known_answer() -> None:
 
     assert response.provider == "bootstrap-local"
     assert "framework" in response.answer.lower()
+
+
+@pytest.mark.asyncio
+async def test_returns_default_answer() -> None:
+    service = BootstrapAssistantService()
+
+    response = await service.answer("Hola, ¿cómo estás?")
+
+    assert response.provider == "bootstrap-local"
+    assert "operativa" in response.answer
