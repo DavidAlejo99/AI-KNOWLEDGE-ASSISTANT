@@ -26,3 +26,33 @@ class FakeLLMProvider:
         if self.fail:
             raise LLMProviderError("Fallo simulado")
         return LLMResult(content=self.answer, model="fake-model")
+
+
+class FakeToolCallingProvider:
+    """Devuelve respuestas guionizadas, una por cada ronda del agente."""
+
+    def __init__(self, responses: list, fail: bool = False) -> None:
+        self.responses = list(responses)
+        self.fail = fail
+        self.calls: list[list[dict]] = []
+
+    async def complete_with_tools(
+        self,
+        messages: list[dict],
+        tools: list[dict],
+        temperature: float = 0.3,
+        top_p: float = 1.0,
+        max_tokens: int = 300,
+    ):
+        self.calls.append([dict(m) for m in messages])
+        if self.fail:
+            raise LLMProviderError("Fallo simulado")
+        return self.responses.pop(0)
+
+
+def tool_call(call_id: str, name: str, arguments: str) -> dict:
+    return {
+        "id": call_id,
+        "type": "function",
+        "function": {"name": name, "arguments": arguments},
+    }

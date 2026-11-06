@@ -1,3 +1,4 @@
+import json
 import httpx
 import pytest
 
@@ -68,3 +69,35 @@ async def test_missing_api_key_raises_controlled_error() -> None:
 
     with pytest.raises(LLMProviderError, match="OPENROUTER_API_KEY"):
         await make_provider(handler, api_key="").generate(MESSAGES)
+
+
+@pytest.mark.asyncio
+async def test_complete_with_tools_sends_tools_and_returns_calls() -> None:
+    sent = {}
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        sent.update(json.loads(request.content))
+        return httpx.Response(
+            200,
+            json={
+                "model": "served-model",
+                "choices": [{
+                    "message": {
+                        "content": None,
+                        "tool_calls": [{
+                            "id": "call_1",
+                            "type": "function",
+                            "function": {"name": "calculate_study_hours", "arguments": "{}"},
+                        }],
+                    }
+                }],
+            },
+        )
+
+    tools = [{"type": "function", "function": {"name": "calculate_study_hours"}}]
+    result = await make_provider(handler).complete_with_tools(MESSAGES, tools)
+
+    assert sent["tools"] == tools
+    assert sent["tool_choice"] == "auto"
+    assert result.tool_calls[0]["function"]["name"] == "calculate_study_hours"
+    assert result.model == "served-model"
