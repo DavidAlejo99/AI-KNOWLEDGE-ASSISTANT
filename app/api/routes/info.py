@@ -13,7 +13,7 @@ router = APIRouter(
 async def info() -> InfoResponse:
     return InfoResponse(
         name="AI Knowledge Assistant",
-        version="0.2.0",
+        version="0.3.0",
         environment="development",
         llm_enabled=True,
     )
