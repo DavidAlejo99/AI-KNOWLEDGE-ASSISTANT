@@ -4,8 +4,13 @@ from typing import Any, Callable
 
 from pydantic import BaseModel, ValidationError
 
-from app.tools.functions import calculate_study_hours, create_study_task, lookup_ai_concept
-from app.tools.schemas import ConceptArgs, HoursArgs, TaskArgs
+from app.tools.functions import (
+    calculate_study_hours,
+    create_study_task,
+    estimate_learning_effort,
+    lookup_ai_concept,
+)
+from app.tools.schemas import ConceptArgs, EffortArgs, HoursArgs, TaskArgs
 
 
 @dataclass(frozen=True)
@@ -34,6 +39,17 @@ REGISTRY: dict[str, Tool] = {
         create_study_task,
         True,
         "Crea una tarea de estudio. Requiere confirmación explícita.",
+    ),
+    "estimate_learning_effort": Tool(
+        EffortArgs,
+        estimate_learning_effort,
+        False,
+        (
+            "Estima horas totales, semanas y nivel de esfuerzo (bajo, medio o alto) "
+            "a partir de la dificultad (basico, intermedio o avanzado), la cantidad "
+            "de temas y las horas disponibles por semana. Si falta algún dato, "
+            "pídeselo al usuario antes de usarla."
+        ),
     ),
 }
 
