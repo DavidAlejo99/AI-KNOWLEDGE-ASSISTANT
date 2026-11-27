@@ -5,6 +5,7 @@ from app.api.routes.chat import router as chat_router
 from app.api.routes.conversations import router as conversations_router
 from app.api.routes.health import router as health_router
 from app.api.routes.info import router as info_router
+from app.api.routes.tasks import router as tasks_router
 
 
 app = FastAPI(
@@ -21,3 +22,4 @@ app.include_router(info_router)
 app.include_router(chat_router)
 app.include_router(agent_router)
 app.include_router(conversations_router)
+app.include_router(tasks_router)
