@@ -89,6 +89,7 @@ fastapi dev
 | POST · GET | `/api/v1/conversations/{id}/memories` | Agregar (máximo 10) o listar memorias |
 | DELETE | `/api/v1/conversations/{id}/memories/{memory_id}` | Borrar una memoria |
 | DELETE | `/api/v1/conversations/{id}` | Borrar la conversación con sus mensajes y memorias |
+| GET | `/api/v1/tasks` | Tareas creadas por el agente (solo lectura, viven en memoria) |
 
 ### POST /api/v1/chat
 
@@ -166,6 +167,15 @@ python -m pytest -q
 ```
 
 Las pruebas usan proveedores falsos (`tests/fakes.py`), `httpx.MockTransport` y bases SQLite temporales. Además, `tests/conftest.py` bloquea el DNS y las conexiones de red en todas las pruebas, así que ninguna puede gastar tokens ni llamar a OpenRouter.
+
+## Guía de pruebas del Módulo IV (Swagger)
+
+`scripts/pruebas_modulo4.py` ejecuta los casos P01 a P18 de la guía directamente en Swagger UI con Playwright: levanta su propio servidor en el puerto 8010 con una base aparte (`data/pruebas_modulo4.db`), lo reinicia para comprobar la persistencia y guarda capturas, respuestas JSON y la matriz de resultados en `entrega-modulo-iv/` (ignorada por Git).
+
+```bash
+pip install playwright
+python scripts/pruebas_modulo4.py          # añade --ver para mirar el navegador
+```
 
 ## Scripts
 

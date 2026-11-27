@@ -13,3 +13,4 @@ venv/
 !.env.example
 data/
 *.db
+entrega-modulo-iv/
